@@ -16,6 +16,7 @@ SELECT   DISTINCT  first_name	FROM   students ;
 
 --Statement 5.
 SELECT   SUBSTR(first_name,1,2)   FROM students ;
+SELECT   SUBSTR(first_name,-3,12)   FROM students ;
 
 --Statement 6.
 SELECT   *   FROM students 
@@ -44,6 +45,11 @@ SELECT    student_id, prefix , first_name, last_name
 FROM students
 WHERE    student_id  LIKE  '5_13%'   ;
 
+SELECT    student_id, prefix , first_name, last_name
+FROM students
+WHERE    student_id  LIKE  '5%13%'   ;
+
+
 --Statement 12.
 SELECT   *   FROM students 
 WHERE  first_name = 'John'  
@@ -64,11 +70,19 @@ SELECT   CONCAT(address, district)  , zipcode
 FROM      students  
 WHERE    zipcode='10140'   ;
 
+SELECT address || '  '  || district from STUDENTS;
+
+--SELECT * FROM STUDENTS;
 
 --Statement 16.
 SELECT   CONCAT(address, district)  , zipcode
 FROM      students  
 WHERE    zipcode IN ('10140', '10150')   ;
+
+SELECT   CONCAT(address, district)  , zipcode
+FROM      students  
+WHERE    zipcode LIKE '10140' OR zipcode LIKE '10150'   ;
+
 
 --Statement 17.
 SELECT   last_name, first_name, student_id
