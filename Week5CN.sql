@@ -50,13 +50,64 @@ GROUP BY s.fname;
 
 
 
---5.	List staff who has the same position with  ‘Mary’.
-
-
-
-
-
-????????????????????
-???????????????????????
-???????????????????????
+--????????????????????
+--???????????????????????
+--???????????????????????
+--EX ?????TABLE????????
 --List staff name and their sup.name
+--SELECT st.name ,sup.name
+--FROM staff st join staff sup
+--on st.supID = sop.staffID;
+
+--5.	List staff who has the same position with  ‘Mary’.
+SELECT s2.fname, s2.POSITION
+FROM staff s1 cross join staff s2
+where s1.fname = 'Mary' and s1.position = s2.position;
+
+
+--Practices
+--1.	List full details of all properties for rent along with owner’s name (first name and last name).
+
+SELECT p.*,o.fname|| ' ' || o.lname AS name
+FROM propertyforrent p join privateowner o on p.ownerno = o.ownerno;
+
+--2.	List the staff number, first and last names and branch city of all staffs.
+
+SELECT s.staffno,s.fname,s.lname,b.city
+from staff s join branch b on s.BRANCHNO = b.BRANCHNO;
+
+
+--3.	List the name of clients who have viewed the properties more than one time.
+
+select c.fname,count(v.propertyno)
+from client c join viewing v on c.clientno = v.CLIENTNO
+group by c.fname
+having count(v.propertyno) > 1;
+
+
+--4.	List the number of properties handled by each staff member, along with the branch number of the member of staff
+
+select s.STAFFNO ,b.BRANCHNO ,(p.PROPERTYNO)
+from propertyforrent p join staff s on p.staffno = s.staffno
+    join branchno b on b.branchno = s.branchno
+    group by s.staffno,b.branchno;
+
+--5.	List the branch cities that staffs manage the properties that are house type. Remove the duplicate records.
+
+
+
+--6.	List the client name and view date of all viewings on properties that are managed by staffs’ branch office in Glasgow.
+
+
+
+--7.	List the name of owners whose properties locate in Glasgow and clients have viewed the properties of the same owner more than two times.
+
+
+
+--8.	List full details of all properties for rent along with owner’s name (first name and last name).  Show only the properties that are managed by staffs in Branch No B003.
+
+
+
+--9.	How many properties are managed in each branch city? 
+
+
