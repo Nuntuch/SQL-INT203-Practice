@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="movies" id="7A5F5B3D-256C-0950-C17A-C2BCC4453CD3" version="3.5">
+<createdBy>INT203_G1</createdBy>
+<createdTime>2017-08-07 03:31:17 UTC</createdTime>
+<ownerDesignName>movies</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>7A5F5B3D-256C-0950-C17A-C2BCC4453CD3</designId>
+</OSDM_Design>

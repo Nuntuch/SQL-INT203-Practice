@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9437782E-A874-E27D-DC67-109F22161E1A" name="movies">
+<createdBy>INT203_G1</createdBy>
+<createdTime>2017-08-07 03:34:50 UTC</createdTime>
+<ownerDesignName>movies</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="movie_id" id="B0095AA0-4914-BF3D-1915-72DC311661C1">
+<createdBy>INT203_G1</createdBy>
+<createdTime>2017-08-07 03:39:16 UTC</createdTime>
+<ownerDesignName>movies</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="movie_name" id="F394E63E-50A0-1F33-8B90-05816E2E8070">
+<createdBy>INT203_G1</createdBy>
+<createdTime>2017-08-07 03:41:26 UTC</createdTime>
+<ownerDesignName>movies</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AF4431E9-E309-C540-9812-4B99B98A702E" name="movies_PK">
+<createdBy>INT203_G1</createdBy>
+<createdTime>2017-08-07 03:39:16 UTC</createdTime>
+<ownerDesignName>movies</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B0095AA0-4914-BF3D-1915-72DC311661C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="12518ECB-AD70-D2E0-CABD-47F3C7C22055" name="celebs">
+<createdBy>INT203_G1</createdBy>
+<createdTime>2017-08-07 03:42:24 UTC</createdTime>
+<ownerDesignName>movies</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="celeb_id" id="A198C456-6F29-929F-1180-8CCD5FFC8D27">
+<createdBy>INT203_G1</createdBy>
+<createdTime>2017-08-07 03:44:05 UTC</createdTime>
+<ownerDesignName>movies</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="celeb_name" id="B8BB7CB9-C243-03CB-A27D-D2EF667A6D38">
+<createdBy>INT203_G1</createdBy>
+<createdTime>2017-08-07 03:45:35 UTC</createdTime>
+<ownerDesignName>movies</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="celeb_age" id="BFE662FA-951C-B008-EF2E-4B84C405233F">
+<createdBy>INT203_G1</createdBy>
+<createdTime>2017-08-07 03:45:35 UTC</createdTime>
+<ownerDesignName>movies</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="movies_movie_id" id="A0FD7F80-B7FD-4E4A-1EDE-08148EEB4FD8">
+<createdBy>INT203_G1</createdBy>
+<createdTime>2017-08-07 03:47:31 UTC</createdTime>
+<ownerDesignName>movies</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F7B163B0-F1B2-8140-AFD0-4748BD53C26A" referredColumn="B0095AA0-4914-BF3D-1915-72DC311661C1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3996187C-0F10-AFA4-578C-E5D586B5782E" name="celebs_PK">
+<createdBy>INT203_G1</createdBy>
+<createdTime>2017-08-07 03:44:05 UTC</createdTime>
+<ownerDesignName>movies</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A198C456-6F29-929F-1180-8CCD5FFC8D27"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0F81F078-D034-CCDA-89D9-333DDF86241A" name="celebs_movies_FK">
+<createdBy>INT203_G1</createdBy>
+<createdTime>2017-08-07 03:47:30 UTC</createdTime>
+<ownerDesignName>movies</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A0FD7F80-B7FD-4E4A-1EDE-08148EEB4FD8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

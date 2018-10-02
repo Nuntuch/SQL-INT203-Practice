@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="12518ECB-AD70-D2E0-CABD-47F3C7C22055" name="celebs" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="46072F9E-E966-6AA8-9181-6D29F5F52561" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="9437782E-A874-E27D-DC67-109F22161E1A" name="movies" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="46072F9E-E966-6AA8-9181-6D29F5F52561" propertySourceId="" propertyTargetId=""/>
+   <object objectType="FKIndexAssociation" objectID="F7B163B0-F1B2-8140-AFD0-4748BD53C26A" name="celebs_movies_FK" containerID="12518ECB-AD70-D2E0-CABD-47F3C7C22055" refContainerID="9437782E-A874-E27D-DC67-109F22161E1A" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" propertyParentId="46072F9E-E966-6AA8-9181-6D29F5F52561" propertySourceId="9437782E-A874-E27D-DC67-109F22161E1A" propertyTargetId="12518ECB-AD70-D2E0-CABD-47F3C7C22055"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>
